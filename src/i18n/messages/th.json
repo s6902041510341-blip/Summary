@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "dashboard": "แดชบอร์ด",
+    "summaries": "สรุปบทเรียน",
+    "assignments": "งานที่มอบหมาย",
+    "logout": "ออกจากระบบ",
+    "profile": "โปรไฟล์"
+  },
+  "dashboard": {
+    "welcome": "ยินดีต้อนรับ, {name}",
+    "welcomeDefault": "ยินดีต้อนรับ",
+    "recentSummaries": "สรุปบทเรียนล่าสุด",
+    "upcomingAssignments": "งานที่กำลังจะถึงกำหนด",
+    "noSummaries": "ยังไม่มีสรุปบทเรียน",
+    "noSummariesDesc": "เริ่มต้นบันทึกสิ่งที่เรียนรู้วันนี้ได้เลย",
+    "noAssignments": "ไม่มีงานที่ยังค้างอยู่",
+    "noAssignmentsDesc": "เยี่ยมมาก! ทุกงานเสร็จหมดแล้ว",
+    "addSummary": "เพิ่มสรุปบทเรียน",
+    "addAssignment": "เพิ่มงาน",
+    "viewAll": "ดูทั้งหมด",
+    "stats": {
+      "totalSummaries": "สรุปบทเรียนทั้งหมด",
+      "totalAssignments": "งานทั้งหมด",
+      "completed": "เสร็จแล้ว",
+      "pending": "ยังไม่เสร็จ",
+      "overdue": "เกินกำหนด"
+    }
+  },
+  "summary": {
+    "title": "สรุปบทเรียน",
+    "create": "สร้างสรุปใหม่",
+    "edit": "แก้ไขสรุป",
+    "delete": "ลบสรุป",
+    "deleteConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบสรุปนี้?",
+    "fields": {
+      "title": "หัวข้อ",
+      "titlePlaceholder": "เช่น สรุปเรื่องสมการเชิงเส้น",
+      "body": "เนื้อหา",
+      "bodyPlaceholder": "บันทึกสิ่งที่เรียนรู้วันนี้...",
+      "date": "วันที่",
+      "subject": "วิชา",
+      "subjectPlaceholder": "เลือกวิชา",
+      "tags": "แท็ก",
+      "tagsPlaceholder": "เพิ่มแท็ก แล้วกด Enter"
+    },
+    "actions": {
+      "save": "บันทึก",
+      "saving": "กำลังบันทึก...",
+      "cancel": "ยกเลิก"
+    },
+    "empty": {
+      "title": "ยังไม่มีสรุปบทเรียน",
+      "description": "เริ่มบันทึกสิ่งที่เรียนรู้เพื่อติดตามความก้าวหน้าของคุณ"
+    }
+  },
+  "assignment": {
+    "title": "งานที่มอบหมาย",
+    "create": "เพิ่มงานใหม่",
+    "edit": "แก้ไขงาน",
+    "delete": "ลบงาน",
+    "deleteConfirm": "คุณแน่ใจหรือไม่ว่าต้องการลบงานนี้?",
+    "fields": {
+      "title": "ชื่องาน",
+      "titlePlaceholder": "เช่น แบบฝึกหัดบทที่ 3",
+      "description": "รายละเอียด (ไม่บังคับ)",
+      "descriptionPlaceholder": "รายละเอียดเพิ่มเติม...",
+      "dueDate": "วันครบกำหนด",
+      "subject": "วิชา",
+      "subjectPlaceholder": "เลือกวิชา",
+      "type": "ประเภท",
+      "priority": "ความสำคัญ"
+    },
+    "types": {
+      "homework": "การบ้าน",
+      "project": "โปรเจกต์",
+      "exam": "สอบ"
+    },
+    "priorities": {
+      "low": "ต่ำ",
+      "medium": "ปานกลาง",
+      "high": "สูง"
+    },
+    "status": {
+      "completed": "เสร็จแล้ว",
+      "pending": "ยังไม่เสร็จ",
+      "overdue": "เกินกำหนด",
+      "dueToday": "ครบกำหนดวันนี้",
+      "dueTomorrow": "ครบกำหนดพรุ่งนี้",
+      "dueOn": "ครบกำหนด {date}"
+    },
+    "actions": {
+      "markComplete": "ทำเสร็จแล้ว",
+      "markIncomplete": "ยังไม่เสร็จ",
+      "save": "บันทึก",
+      "saving": "กำลังบันทึก...",
+      "cancel": "ยกเลิก"
+    },
+    "empty": {
+      "title": "ไม่มีงานในขณะนี้",
+      "description": "เพิ่มงานที่มอบหมายเพื่อเริ่มติดตามความคืบหน้า"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "เข้าสู่ระบบ",
+      "subtitle": "ยินดีต้อนรับกลับมา",
+      "email": "อีเมล",
+      "emailPlaceholder": "your@email.com",
+      "password": "รหัสผ่าน",
+      "passwordPlaceholder": "รหัสผ่านของคุณ",
+      "submit": "เข้าสู่ระบบ",
+      "submitting": "กำลังเข้าสู่ระบบ...",
+      "noAccount": "ยังไม่มีบัญชี?",
+      "register": "สมัครสมาชิก",
+      "error": "อีเมลหรือรหัสผ่านไม่ถูกต้อง"
+    },
+    "register": {
+      "title": "สมัครสมาชิก",
+      "subtitle": "สร้างบัญชีใหม่",
+      "fullName": "ชื่อ-นามสกุล",
+      "fullNamePlaceholder": "ชื่อของคุณ",
+      "email": "อีเมล",
+      "emailPlaceholder": "your@email.com",
+      "password": "รหัสผ่าน",
+      "passwordPlaceholder": "อย่างน้อย 8 ตัวอักษร",
+      "submit": "สมัครสมาชิก",
+      "submitting": "กำลังสมัคร...",
+      "hasAccount": "มีบัญชีแล้ว?",
+      "login": "เข้าสู่ระบบ",
+      "error": "เกิดข้อผิดพลาด กรุณาลองใหม่",
+      "success": "สมัครสมาชิกสำเร็จ! กรุณาตรวจสอบอีเมลเพื่อยืนยันตัวตน"
+    }
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองใหม่",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "back": "ย้อนกลับ",
+    "confirm": "ยืนยัน",
+    "noSubject": "ไม่ระบุวิชา",
+    "selectSubject": "เลือกวิชา",
+    "language": "ภาษา"
+  }
+}

@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ──────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@400;500;600;700;800&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* ─── Base layer ────────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* Map CSS variables to design tokens */
+    --background:          0d0d0d;
+    --background-secondary: 1a1a1a;
+    --foreground:          f5f5f5;
+    --border:              2e2e2e;
+    --primary:             ffffff;
+    --primary-foreground:  0d0d0d;
+    --radius:              16px;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply scroll-smooth;
+    /* Thai text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 1rem;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  /* Visual Hierarchy: Headings use Playpen Sans Thai */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Alignment: consistent input baseline */
+  input, textarea, select {
+    @apply font-body;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary/40 ring-offset-2 ring-offset-background;
+  }
+
+  /* Custom scrollbar (Repetition: consistent across app) */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border-strong rounded-pill;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-foreground-muted;
+  }
+}
+
+/* ─── Component layer ───────────────────────────────────────── */
+@layer components {
+  /* Grid System: standard page container */
+  .page-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Visual Hierarchy: section title */
+  .section-title {
+    @apply font-heading text-heading-lg text-foreground font-semibold;
+  }
+
+  /* Repetition: card component baseline */
+  .card-base {
+    @apply bg-background-secondary border border-border rounded-card shadow-card;
+  }
+
+  /* Repetition: input baseline */
+  .input-base {
+    @apply w-full bg-background-tertiary border border-border rounded-input
+           px-4 py-3 text-foreground placeholder:text-foreground-subtle
+           focus:outline-none focus:border-foreground-muted focus:shadow-input-focus
+           transition-all duration-200 font-body;
+  }
+
+  /* Contrast: primary CTA button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-primary text-primary-foreground font-heading font-semibold
+           rounded-input px-5 py-2.5 text-body
+           hover:bg-primary-hover active:bg-primary-active
+           transition-all duration-200
+           focus-visible:ring-2 focus-visible:ring-primary/40
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Repetition: secondary/ghost button */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-foreground font-heading font-medium
+           border border-border rounded-input px-5 py-2.5 text-body
+           hover:bg-background-tertiary hover:border-border-strong
+           transition-all duration-200
+           focus-visible:ring-2 focus-visible:ring-primary/20
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Repetition: danger button */
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2
+           bg-danger/10 text-danger font-heading font-medium
+           border border-danger/30 rounded-input px-5 py-2.5 text-body
+           hover:bg-danger/20
+           transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Skeleton loading (Repetition) */
+  .skeleton {
+    @apply bg-background-tertiary rounded animate-skeleton;
+  }
+}
